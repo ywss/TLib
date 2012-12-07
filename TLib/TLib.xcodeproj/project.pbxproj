@@ -1,0 +1,267 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13421C611654B28F00401C67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13421C601654B28F00401C67 /* Foundation.framework */; };
+		139DDA9B1671A42D00CE892C /* UIButton+create.m in Sources */ = {isa = PBXBuildFile; fileRef = 139DDA9A16719D8000CE892C /* UIButton+create.m */; };
+		139DDA9E1671A49E00CE892C /* UILabel+create.m in Sources */ = {isa = PBXBuildFile; fileRef = 139DDA9D1671A49E00CE892C /* UILabel+create.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		13421C5B1654B28F00401C67 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		13421C5D1654B28F00401C67 /* libTLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		13421C601654B28F00401C67 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		13421C641654B28F00401C67 /* TLib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TLib-Prefix.pch"; sourceTree = "<group>"; };
+		13421C6F1654B30600401C67 /* TMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMacros.h; sourceTree = "<group>"; };
+		139DDA9816719D8000CE892C /* TCategories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCategories.h; sourceTree = "<group>"; };
+		139DDA9916719D8000CE892C /* UIButton+create.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+create.h"; sourceTree = "<group>"; };
+		139DDA9A16719D8000CE892C /* UIButton+create.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+create.m"; sourceTree = "<group>"; };
+		139DDA9C1671A49E00CE892C /* UILabel+create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+create.h"; sourceTree = "<group>"; };
+		139DDA9D1671A49E00CE892C /* UILabel+create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+create.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13421C5A1654B28F00401C67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13421C611654B28F00401C67 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13421C521654B28F00401C67 = {
+			isa = PBXGroup;
+			children = (
+				139DDA9716719D2A00CE892C /* categories */,
+				13421C6E1654B30600401C67 /* macros */,
+				13421C621654B28F00401C67 /* TLib */,
+				13421C5F1654B28F00401C67 /* Frameworks */,
+				13421C5E1654B28F00401C67 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		13421C5E1654B28F00401C67 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13421C5D1654B28F00401C67 /* libTLib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		13421C5F1654B28F00401C67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13421C601654B28F00401C67 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		13421C621654B28F00401C67 /* TLib */ = {
+			isa = PBXGroup;
+			children = (
+				13421C631654B28F00401C67 /* Supporting Files */,
+			);
+			path = TLib;
+			sourceTree = "<group>";
+		};
+		13421C631654B28F00401C67 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				13421C641654B28F00401C67 /* TLib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13421C6E1654B30600401C67 /* macros */ = {
+			isa = PBXGroup;
+			children = (
+				13421C6F1654B30600401C67 /* TMacros.h */,
+			);
+			name = macros;
+			path = TLib/macros;
+			sourceTree = "<group>";
+		};
+		139DDA9716719D2A00CE892C /* categories */ = {
+			isa = PBXGroup;
+			children = (
+				139DDA9816719D8000CE892C /* TCategories.h */,
+				139DDA9916719D8000CE892C /* UIButton+create.h */,
+				139DDA9A16719D8000CE892C /* UIButton+create.m */,
+				139DDA9C1671A49E00CE892C /* UILabel+create.h */,
+				139DDA9D1671A49E00CE892C /* UILabel+create.m */,
+			);
+			name = categories;
+			path = TLib/categories;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13421C5C1654B28F00401C67 /* TLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13421C6B1654B28F00401C67 /* Build configuration list for PBXNativeTarget "TLib" */;
+			buildPhases = (
+				13421C591654B28F00401C67 /* Sources */,
+				13421C5A1654B28F00401C67 /* Frameworks */,
+				13421C5B1654B28F00401C67 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TLib;
+			productName = TLib;
+			productReference = 13421C5D1654B28F00401C67 /* libTLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		13421C541654B28F00401C67 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = t;
+			};
+			buildConfigurationList = 13421C571654B28F00401C67 /* Build configuration list for PBXProject "TLib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 13421C521654B28F00401C67;
+			productRefGroup = 13421C5E1654B28F00401C67 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13421C5C1654B28F00401C67 /* TLib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13421C591654B28F00401C67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				139DDA9B1671A42D00CE892C /* UIButton+create.m in Sources */,
+				139DDA9E1671A49E00CE892C /* UILabel+create.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		13421C691654B28F00401C67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		13421C6A1654B28F00401C67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		13421C6C1654B28F00401C67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/TLib.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TLib/TLib-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		13421C6D1654B28F00401C67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/TLib.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TLib/TLib-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13421C571654B28F00401C67 /* Build configuration list for PBXProject "TLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13421C691654B28F00401C67 /* Debug */,
+				13421C6A1654B28F00401C67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13421C6B1654B28F00401C67 /* Build configuration list for PBXNativeTarget "TLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13421C6C1654B28F00401C67 /* Debug */,
+				13421C6D1654B28F00401C67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 13421C541654B28F00401C67 /* Project object */;
+}
