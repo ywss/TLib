@@ -26,7 +26,7 @@
                               BackgroundColor:[UIColor redColor]
                                        InView:self.view];
     
-    assert(lbl != nil);
+//    assert(lbl != nil);
     
     lbl.backgroundColor = [UIColor clearColor];
     
