@@ -1,4 +1,4 @@
 TLib
 ====
 
-helper tools for ios develop
+helper tools for my iOS proj
