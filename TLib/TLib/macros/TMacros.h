@@ -61,7 +61,7 @@
 {/ ·· /}\n\
 ( (00) )\n\
 ︶︶︶\n\
-fuck2 \n\n")
+fuck \n\n")
 
 #define ShowCallstack NSLog(@"%@", [NSThread callStackSymbols])
 
@@ -87,15 +87,15 @@ fuck2 \n\n")
 
 #ifdef Debug_Mode_On
 
-    #define TLog(...) NSLog(__VA_ARGS__)
+#define TLog(s, ...) NSLog([NSString stringWithFormat:(s), ##__VA_ARGS__])
 
-    #define TTLog( s, ... ) NSLog( @"<address %p %@:(line %d)> %@", self, [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+#define TTLog( s, ... ) NSLog( @"<address %p %@:(line %d)> %@", self, [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
 
 #else
 
-    #define TLog(...)
+#define TLog(s, ...)
 
-    #define TTLog( s, ... )
+#define TTLog( s, ... )
 
 #endif
 

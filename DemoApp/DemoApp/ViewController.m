@@ -17,8 +17,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
-
+    
+    TLog(@"%@", @"fuck");
+    TLog(@"fuck2");
+    
     UILabel *lbl = [UILabel genLabelWithFrame:CGRectMake(10, 10, 200, 30)
                                          Text:@"test"
                                  TextFontSize:12.0
@@ -27,10 +29,8 @@
                                        InView:self.view];
     
     assert(lbl != nil);
-    //
     
     lbl.backgroundColor = [UIColor clearColor];
-    
 }
 
 - (void)didReceiveMemoryWarning
