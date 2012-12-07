@@ -20,13 +20,13 @@
 	
 
     UILabel *lbl = [UILabel genLabelWithFrame:CGRectMake(10, 10, 200, 30)
-                                         Text:@"fuck"
+                                         Text:@"test"
                                  TextFontSize:12.0
                                     TextColor:[UIColor blackColor]
                               BackgroundColor:[UIColor redColor]
                                        InView:self.view];
     
-//    assert(lbl != nil);
+    assert(lbl != nil);
     
     lbl.backgroundColor = [UIColor clearColor];
     
