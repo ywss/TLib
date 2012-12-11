@@ -13,8 +13,7 @@
 #if (TARGET_OS_IPHONE && __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_4_0)
 
 // Transform the image in grayscale.
-- (UIImage *)grayishImage:(UIImage *)inputImage
-{
++ (UIImage *)grayishImage:(UIImage *)inputImage{
     // Create a graphic context.
     UIGraphicsBeginImageContextWithOptions(inputImage.size, YES, 1.0);
     CGRect imageRect = CGRectMake(0, 0, inputImage.size.width, inputImage.size.height);
@@ -31,5 +30,45 @@
 }
 
 #endif
+
+
++ (UIImage *) createRoundedRectImage:(UIImage*)image
+                                Size:(CGSize)size
+                           OvalWidth:(float)width
+                          OvalHeight:(float)height{
+
+    int w = size.width;
+    int h = size.height;
+    
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    CGContextRef context = CGBitmapContextCreate(NULL, w, h, 8, 4 * w, colorSpace, kCGImageAlphaPremultipliedFirst);
+    CGColorSpaceRelease(colorSpace);
+    
+    CGRect rect = CGRectMake(0, 0, w, h);
+    
+    CGContextBeginPath(context);
+    addRoundedRectToPath(context, rect, width, height);
+    CGContextClosePath(context);
+    
+    CGContextClip(context);
+    CGContextDrawImage(context, CGRectMake(0, 0, w, h), image.CGImage);
+    
+    CGImageRef imageMasked = CGBitmapContextCreateImage(context);
+    CGContextRelease(context);
+    UIImage *img = [UIImage imageWithCGImage:imageMasked];
+    CGImageRelease(imageMasked);
+    
+    return img;
+}
+
++ (UIImage *) createRoundedRectImage:(UIImage*)image
+                           OvalWidth:(float)width
+                          OvalHeight:(float)height{
+    
+    return [UIImage createRoundedRectImage:image
+                                      Size:image.size
+                                 OvalWidth:width
+                                OvalHeight:height];
+}
 
 @end

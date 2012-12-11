@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1323B82A167721ED00DD0173 /* libTLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139DDA5A16718B4F00CE892C /* libTLib.a */; };
+		1323B82E1677283000DD0173 /* aaa.png in Resources */ = {isa = PBXBuildFile; fileRef = 1323B82D1677283000DD0173 /* aaa.png */; };
+		1323B8301677284000DD0173 /* xiong.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1323B82F1677284000DD0173 /* xiong.jpg */; };
 		13B8D8E3167188C200FA0480 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B8D8E2167188C200FA0480 /* UIKit.framework */; };
 		13B8D8E5167188C200FA0480 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B8D8E4167188C200FA0480 /* Foundation.framework */; };
 		13B8D8E7167188C200FA0480 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B8D8E6167188C200FA0480 /* CoreGraphics.framework */; };
@@ -20,10 +23,16 @@
 		13B8D8FF167188C200FA0480 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B8D8FD167188C200FA0480 /* ViewController_iPhone.xib */; };
 		13B8D902167188C200FA0480 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B8D900167188C200FA0480 /* ViewController_iPad.xib */; };
 		13B8D9121671892F00FA0480 /* TLib.xcodeproj in Resources */ = {isa = PBXBuildFile; fileRef = 13B8D9111671892F00FA0480 /* TLib.xcodeproj */; };
-		13E061701671B6B2003C70D3 /* libTLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139DDA5A16718B4F00CE892C /* libTLib.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1323B828167721E000DD0173 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13B8D9111671892F00FA0480 /* TLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 13421C5C1654B28F00401C67;
+			remoteInfo = TLib;
+		};
 		139DDA5916718B4F00CE892C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 13B8D9111671892F00FA0480 /* TLib.xcodeproj */;
@@ -31,16 +40,11 @@
 			remoteGlobalIDString = 13421C5D1654B28F00401C67;
 			remoteInfo = TLib;
 		};
-		13E061711671B6D1003C70D3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 13B8D9111671892F00FA0480 /* TLib.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 13421C5C1654B28F00401C67;
-			remoteInfo = TLib;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1323B82D1677283000DD0173 /* aaa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aaa.png; sourceTree = "<group>"; };
+		1323B82F1677284000DD0173 /* xiong.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = xiong.jpg; sourceTree = "<group>"; };
 		13B8D8DE167188C200FA0480 /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B8D8E2167188C200FA0480 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		13B8D8E4167188C200FA0480 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -67,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13E061701671B6B2003C70D3 /* libTLib.a in Frameworks */,
+				1323B82A167721ED00DD0173 /* libTLib.a in Frameworks */,
 				13B8D8E3167188C200FA0480 /* UIKit.framework in Frameworks */,
 				13B8D8E5167188C200FA0480 /* Foundation.framework in Frameworks */,
 				13B8D8E7167188C200FA0480 /* CoreGraphics.framework in Frameworks */,
@@ -77,6 +81,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1323B82C1677281300DD0173 /* pics */ = {
+			isa = PBXGroup;
+			children = (
+				1323B82F1677284000DD0173 /* xiong.jpg */,
+				1323B82D1677283000DD0173 /* aaa.png */,
+			);
+			name = pics;
+			path = DemoApp/pics;
+			sourceTree = "<group>";
+		};
 		139DDA5616718B4F00CE892C /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				13B8D9111671892F00FA0480 /* TLib.xcodeproj */,
+				1323B82C1677281300DD0173 /* pics */,
 				13B8D8E8167188C200FA0480 /* DemoApp */,
 				13B8D8E1167188C200FA0480 /* Frameworks */,
 				13B8D8DF167188C200FA0480 /* Products */,
@@ -156,7 +171,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				13E061721671B6D1003C70D3 /* PBXTargetDependency */,
+				1323B829167721E000DD0173 /* PBXTargetDependency */,
 			);
 			name = DemoApp;
 			productName = DemoApp;
@@ -217,6 +232,8 @@
 				13B8D8FF167188C200FA0480 /* ViewController_iPhone.xib in Resources */,
 				13B8D902167188C200FA0480 /* ViewController_iPad.xib in Resources */,
 				13B8D9121671892F00FA0480 /* TLib.xcodeproj in Resources */,
+				1323B82E1677283000DD0173 /* aaa.png in Resources */,
+				1323B8301677284000DD0173 /* xiong.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,10 +253,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		13E061721671B6D1003C70D3 /* PBXTargetDependency */ = {
+		1323B829167721E000DD0173 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TLib;
-			targetProxy = 13E061711671B6D1003C70D3 /* PBXContainerItemProxy */;
+			targetProxy = 1323B828167721E000DD0173 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -329,9 +346,12 @@
 				GCC_PREFIX_HEADER = "DemoApp/DemoApp-Prefix.pch";
 				INFOPLIST_FILE = "DemoApp/DemoApp-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				OTHER_LDFLAGS = "-all_load";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = ../TLib;
+				USER_HEADER_SEARCH_PATHS = "../**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -344,9 +364,12 @@
 				GCC_PREFIX_HEADER = "DemoApp/DemoApp-Prefix.pch";
 				INFOPLIST_FILE = "DemoApp/DemoApp-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				OTHER_LDFLAGS = "-all_load";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = ../TLib;
+				USER_HEADER_SEARCH_PATHS = "../**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

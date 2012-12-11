@@ -11,8 +11,5 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
-
-    #import "TLib/macros/TMacros.h"
-    #import "TLib/categories/TCategories.h"
-
+    #import "TLib.h"
 #endif

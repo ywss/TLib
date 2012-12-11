@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1323B7E51677131400DD0173 /* UIImage+utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1323B7E41677131400DD0173 /* UIImage+utils.m */; };
+		1323B8271677202100DD0173 /* GraphHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1323B8261677202100DD0173 /* GraphHelper.m */; };
+		1323B83816772E4D00DD0173 /* ViewMask.m in Sources */ = {isa = PBXBuildFile; fileRef = 1323B83716772E4D00DD0173 /* ViewMask.m */; };
+		1323B83B16772EF300DD0173 /* RoundedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1323B83A16772EF300DD0173 /* RoundedView.m */; };
+		1323B83E16772FC100DD0173 /* RoundedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1323B83D16772FC100DD0173 /* RoundedImageView.m */; };
 		13421C611654B28F00401C67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13421C601654B28F00401C67 /* Foundation.framework */; };
 		139DDA9B1671A42D00CE892C /* UIButton+create.m in Sources */ = {isa = PBXBuildFile; fileRef = 139DDA9A16719D8000CE892C /* UIButton+create.m */; };
 		139DDA9E1671A49E00CE892C /* UILabel+create.m in Sources */ = {isa = PBXBuildFile; fileRef = 139DDA9D1671A49E00CE892C /* UILabel+create.m */; };
@@ -28,6 +32,15 @@
 /* Begin PBXFileReference section */
 		1323B7E31677131400DD0173 /* UIImage+utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+utils.h"; sourceTree = "<group>"; };
 		1323B7E41677131400DD0173 /* UIImage+utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+utils.m"; sourceTree = "<group>"; };
+		1323B8251677202100DD0173 /* GraphHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphHelper.h; sourceTree = "<group>"; };
+		1323B8261677202100DD0173 /* GraphHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphHelper.m; sourceTree = "<group>"; };
+		1323B82B1677245200DD0173 /* TLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLib.h; sourceTree = "<group>"; };
+		1323B83616772E4D00DD0173 /* ViewMask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewMask.h; sourceTree = "<group>"; };
+		1323B83716772E4D00DD0173 /* ViewMask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewMask.m; sourceTree = "<group>"; };
+		1323B83916772EF300DD0173 /* RoundedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundedView.h; sourceTree = "<group>"; };
+		1323B83A16772EF300DD0173 /* RoundedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundedView.m; sourceTree = "<group>"; };
+		1323B83C16772FC100DD0173 /* RoundedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundedImageView.h; sourceTree = "<group>"; };
+		1323B83D16772FC100DD0173 /* RoundedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundedImageView.m; sourceTree = "<group>"; };
 		13421C5D1654B28F00401C67 /* libTLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		13421C601654B28F00401C67 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		13421C641654B28F00401C67 /* TLib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TLib-Prefix.pch"; sourceTree = "<group>"; };
@@ -51,9 +64,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1323B81D1677181B00DD0173 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				1323B8251677202100DD0173 /* GraphHelper.h */,
+				1323B8261677202100DD0173 /* GraphHelper.m */,
+			);
+			name = helper;
+			path = TLib/helper;
+			sourceTree = "<group>";
+		};
+		1323B83516772E3700DD0173 /* subview */ = {
+			isa = PBXGroup;
+			children = (
+				1323B83616772E4D00DD0173 /* ViewMask.h */,
+				1323B83716772E4D00DD0173 /* ViewMask.m */,
+				1323B83916772EF300DD0173 /* RoundedView.h */,
+				1323B83A16772EF300DD0173 /* RoundedView.m */,
+				1323B83C16772FC100DD0173 /* RoundedImageView.h */,
+				1323B83D16772FC100DD0173 /* RoundedImageView.m */,
+			);
+			name = subview;
+			path = TLib/subview;
+			sourceTree = "<group>";
+		};
 		13421C521654B28F00401C67 = {
 			isa = PBXGroup;
 			children = (
+				1323B83516772E3700DD0173 /* subview */,
+				1323B81D1677181B00DD0173 /* helper */,
 				139DDA9716719D2A00CE892C /* categories */,
 				13421C6E1654B30600401C67 /* macros */,
 				13421C621654B28F00401C67 /* TLib */,
@@ -90,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				13421C641654B28F00401C67 /* TLib-Prefix.pch */,
+				1323B82B1677245200DD0173 /* TLib.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -172,6 +212,10 @@
 				139DDA9B1671A42D00CE892C /* UIButton+create.m in Sources */,
 				139DDA9E1671A49E00CE892C /* UILabel+create.m in Sources */,
 				1323B7E51677131400DD0173 /* UIImage+utils.m in Sources */,
+				1323B8271677202100DD0173 /* GraphHelper.m in Sources */,
+				1323B83816772E4D00DD0173 /* ViewMask.m in Sources */,
+				1323B83B16772EF300DD0173 /* RoundedView.m in Sources */,
+				1323B83E16772FC100DD0173 /* RoundedImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,9 +269,11 @@
 		13421C6C1654B28F00401C67 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				DSTROOT = /tmp/TLib.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TLib/TLib-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -237,9 +283,11 @@
 		13421C6D1654B28F00401C67 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				DSTROOT = /tmp/TLib.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TLib/TLib-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
