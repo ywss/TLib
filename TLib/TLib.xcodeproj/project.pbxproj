@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1323B7E51677131400DD0173 /* UIImage+utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1323B7E41677131400DD0173 /* UIImage+utils.m */; };
 		13421C611654B28F00401C67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13421C601654B28F00401C67 /* Foundation.framework */; };
 		139DDA9B1671A42D00CE892C /* UIButton+create.m in Sources */ = {isa = PBXBuildFile; fileRef = 139DDA9A16719D8000CE892C /* UIButton+create.m */; };
 		139DDA9E1671A49E00CE892C /* UILabel+create.m in Sources */ = {isa = PBXBuildFile; fileRef = 139DDA9D1671A49E00CE892C /* UILabel+create.m */; };
@@ -25,6 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1323B7E31677131400DD0173 /* UIImage+utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+utils.h"; sourceTree = "<group>"; };
+		1323B7E41677131400DD0173 /* UIImage+utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+utils.m"; sourceTree = "<group>"; };
 		13421C5D1654B28F00401C67 /* libTLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		13421C601654B28F00401C67 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		13421C641654B28F00401C67 /* TLib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TLib-Prefix.pch"; sourceTree = "<group>"; };
@@ -108,6 +111,8 @@
 				139DDA9A16719D8000CE892C /* UIButton+create.m */,
 				139DDA9C1671A49E00CE892C /* UILabel+create.h */,
 				139DDA9D1671A49E00CE892C /* UILabel+create.m */,
+				1323B7E31677131400DD0173 /* UIImage+utils.h */,
+				1323B7E41677131400DD0173 /* UIImage+utils.m */,
 			);
 			name = categories;
 			path = TLib/categories;
@@ -166,6 +171,7 @@
 			files = (
 				139DDA9B1671A42D00CE892C /* UIButton+create.m in Sources */,
 				139DDA9E1671A49E00CE892C /* UILabel+create.m in Sources */,
+				1323B7E51677131400DD0173 /* UIImage+utils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

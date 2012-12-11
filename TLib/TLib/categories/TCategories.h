@@ -11,5 +11,6 @@
 
 #import "UIButton+create.h"
 #import "UILabel+create.h"
+#import "UIImage+utils.h"
 
 #endif
