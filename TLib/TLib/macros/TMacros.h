@@ -68,7 +68,7 @@
 {/ ·· /}\n\
 ( (00) )\n\
 ︶︶︶\n\
-fuck \n\n")
+pig \n\n")
 
 #define ShowCallstack NSLog(@"%@", [NSThread callStackSymbols])
 
