@@ -16,14 +16,12 @@
 
 @implementation RoundedImageView
 
-- (void)setup
-{
+- (void)setup{
     _mask = [[ViewMask alloc] initWithFrame:self.bounds];
     self.layer.mask = _mask.layer;
 }
 
-- (id)initWithFrame:(CGRect)frame
-{
+- (id)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if (self) {
         [self setup];
@@ -31,8 +29,7 @@
     return self;
 }
 
-- (id)initWithCoder:(NSCoder *)aDecoder
-{
+- (id)initWithCoder:(NSCoder *)aDecoder{
     self = [super initWithCoder:aDecoder];
     if (self) {
         [self setup];
@@ -40,18 +37,15 @@
     return  self;
 }
 
-- (void)setCornerRadius:(CGFloat)cornerRadius
-{
+- (void)setCornerRadius:(CGFloat)cornerRadius{
     _mask.cornerRadius = cornerRadius;
 }
 
-- (CGFloat)cornerRadius
-{
+- (CGFloat)cornerRadius{
     return _mask.cornerRadius;
 }
 
-- (void)dealloc
-{
+- (void)dealloc{
     [_mask release];
     _mask = nil;
     

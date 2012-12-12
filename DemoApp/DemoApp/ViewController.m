@@ -18,6 +18,12 @@
 {
     [super viewDidLoad];
     
+    CGRect bounds = (CGRect){.origin=CGPointZero, .size=CGSizeZero};
+    
+    bounds = (CGRect){{1, 2}, {100, 59}};
+    
+    ShowRect(bounds);
+    
     // MARK: -
     // MARK: 灰色图
     
