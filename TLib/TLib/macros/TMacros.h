@@ -22,7 +22,7 @@
 
 #define Twork_TMacros_h
 
-#define Debug_Mode_On // Debug_Mode_Off
+#define TLog_On // TLog_Off
 
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -92,7 +92,7 @@ pig \n\n")
 #define TInvalidate_Timer(_timer) { [_timer invalidate]; _timer = nil; }
 
 
-#ifdef Debug_Mode_On
+#ifdef TLog_On
 
 #define TLog(s, ...) NSLog([NSString stringWithFormat:(s), ##__VA_ARGS__])
 
