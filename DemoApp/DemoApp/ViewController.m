@@ -28,7 +28,12 @@
     // MARK: 灰色图
     
     UIImage *img = [UIImage imageNamed:@"xiong.jpg"];
-    img = [UIImage grayishImage:img];
+    img = [UIImage grayishImage:img];    
+    img = [img appendStringInCenter:@"string"
+                           WithFont:[UIFont systemFontOfSize:20]
+                          TextColor:[UIColor redColor]];
+    
+    
     self.view.backgroundColor = [UIColor colorWithPatternImage:img];
     
     // MARK: -

@@ -32,4 +32,13 @@
 
 ///////////////
 
+-(UIImage *)appendStringInCenter:(NSString *)string
+                        WithFont:(UIFont *)font
+                       TextColor:(UIColor *)color;
+
+-(UIImage *)appendString:(NSString *)string
+                WithFont:(UIFont *)font
+               TextColor:(UIColor *)color
+                  InRect:(CGRect)bounds;
+
 @end

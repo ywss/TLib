@@ -71,4 +71,51 @@
                                 OvalHeight:height];
 }
 
+///////////////////////////////////////////////////////////////
+// MARK: -
+
+-(UIImage *)appendStringInCenter:(NSString *)string
+                        WithFont:(UIFont *)font
+                       TextColor:(UIColor *)color{
+    
+    CGFloat textHeight = font.lineHeight;
+    CGRect bounds = CGRectMake(0,
+                               (self.size.height - textHeight) / 2,
+                               self.size.width,
+                               textHeight);
+    
+    return [self appendString:string
+                     WithFont:font
+                    TextColor:color
+                       InRect:bounds];
+}
+
+-(UIImage *)appendString:(NSString *)string
+                WithFont:(UIFont *)font
+               TextColor:(UIColor *)color
+                  InRect:(CGRect)bounds{
+    
+    if(UIGraphicsBeginImageContextWithOptions != NULL){
+        UIGraphicsBeginImageContextWithOptions(self.size, NO, 0.0);
+    }
+    else{
+        UIGraphicsBeginImageContext(self.size);
+    }
+    
+    [self drawAtPoint:CGPointMake(0, 0)];
+    
+    // Draw the string in the center of the image
+    [color set];
+        
+    [string drawInRect:bounds
+              withFont:font
+         lineBreakMode:UILineBreakModeClip
+             alignment:UITextAlignmentCenter];
+    
+    UIImage* result = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    return result;
+}
+
 @end
