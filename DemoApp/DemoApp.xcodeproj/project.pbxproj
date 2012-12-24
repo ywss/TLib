@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13172D2A16882D470039F0B1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13172D2916882D470039F0B1 /* QuartzCore.framework */; };
 		1323B82A167721ED00DD0173 /* libTLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139DDA5A16718B4F00CE892C /* libTLib.a */; };
 		1323B82E1677283000DD0173 /* aaa.png in Resources */ = {isa = PBXBuildFile; fileRef = 1323B82D1677283000DD0173 /* aaa.png */; };
 		1323B8301677284000DD0173 /* xiong.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1323B82F1677284000DD0173 /* xiong.jpg */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13172D2916882D470039F0B1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		1323B82D1677283000DD0173 /* aaa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aaa.png; sourceTree = "<group>"; };
 		1323B82F1677284000DD0173 /* xiong.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = xiong.jpg; sourceTree = "<group>"; };
 		13B8D8DE167188C200FA0480 /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13172D2A16882D470039F0B1 /* QuartzCore.framework in Frameworks */,
 				1323B82A167721ED00DD0173 /* libTLib.a in Frameworks */,
 				13B8D8E3167188C200FA0480 /* UIKit.framework in Frameworks */,
 				13B8D8E5167188C200FA0480 /* Foundation.framework in Frameworks */,
@@ -122,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				13B8D9131671894300FA0480 /* libTLib.a */,
+				13172D2916882D470039F0B1 /* QuartzCore.framework */,
 				13B8D8E2167188C200FA0480 /* UIKit.framework */,
 				13B8D8E4167188C200FA0480 /* Foundation.framework */,
 				13B8D8E6167188C200FA0480 /* CoreGraphics.framework */,

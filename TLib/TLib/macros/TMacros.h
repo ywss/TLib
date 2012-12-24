@@ -63,18 +63,19 @@
 //
 
 
-#define MarkHere printf("\n\
+#define MarkHere {printf("\n\
 ╭︿︿︿╮\n\
 {/ ·· /}\n\
 ( (00) )\n\
-︶︶︶\n\
-pig \n\n")
+ ︶︶︶\n\
+  pig \n\
+%s\n\n", __TIME__);}
 
-#define ShowCallstack NSLog(@"%@", [NSThread callStackSymbols])
+#define ShowCallstack {NSLog(@"%@", [NSThread callStackSymbols]);}
 
-#define ShowRect(_rect) NSLog(@"%@", NSStringFromCGRect(_rect))
+#define ShowRect(_rect) {NSLog(@"%@", NSStringFromCGRect(_rect));}
 
-#define ShowSelector NSLog(@"%@", NSStringFromSelector(_cmd))
+#define ShowSelector {NSLog(@"%@", NSStringFromSelector(_cmd));}
 
 ///////////////////////////////////////////////////////////////////////////////
 // non arc | arc
@@ -94,9 +95,9 @@ pig \n\n")
 
 #ifdef TLog_On
 
-#define TLog(s, ...) NSLog([NSString stringWithFormat:(s), ##__VA_ARGS__])
+#define TLog(s, ...) {NSLog([NSString stringWithFormat:(s), ##__VA_ARGS__]);}
 
-#define TTLog( s, ... ) NSLog( @"<address %p %@:(line %d)> %@", self, [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+#define TTLog( s, ... ) {NSLog( @"<address %p %@:(line %d)> %@", self, [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] );}
 
 #else
 
