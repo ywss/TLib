@@ -11,6 +11,7 @@
 		1323B82A167721ED00DD0173 /* libTLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139DDA5A16718B4F00CE892C /* libTLib.a */; };
 		1323B82E1677283000DD0173 /* aaa.png in Resources */ = {isa = PBXBuildFile; fileRef = 1323B82D1677283000DD0173 /* aaa.png */; };
 		1323B8301677284000DD0173 /* xiong.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1323B82F1677284000DD0173 /* xiong.jpg */; };
+		134B64D61689B3E7003C82C0 /* FooViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 134B64D51689B3E7003C82C0 /* FooViewController.m */; };
 		13B8D8E3167188C200FA0480 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B8D8E2167188C200FA0480 /* UIKit.framework */; };
 		13B8D8E5167188C200FA0480 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B8D8E4167188C200FA0480 /* Foundation.framework */; };
 		13B8D8E7167188C200FA0480 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B8D8E6167188C200FA0480 /* CoreGraphics.framework */; };
@@ -47,6 +48,8 @@
 		13172D2916882D470039F0B1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		1323B82D1677283000DD0173 /* aaa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aaa.png; sourceTree = "<group>"; };
 		1323B82F1677284000DD0173 /* xiong.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = xiong.jpg; sourceTree = "<group>"; };
+		134B64D41689B3E7003C82C0 /* FooViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FooViewController.h; sourceTree = "<group>"; };
+		134B64D51689B3E7003C82C0 /* FooViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FooViewController.m; sourceTree = "<group>"; };
 		13B8D8DE167188C200FA0480 /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B8D8E2167188C200FA0480 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		13B8D8E4167188C200FA0480 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -142,6 +145,8 @@
 				13B8D8FB167188C200FA0480 /* ViewController.m */,
 				13B8D8FD167188C200FA0480 /* ViewController_iPhone.xib */,
 				13B8D900167188C200FA0480 /* ViewController_iPad.xib */,
+				134B64D41689B3E7003C82C0 /* FooViewController.h */,
+				134B64D51689B3E7003C82C0 /* FooViewController.m */,
 				13B8D8E9167188C200FA0480 /* Supporting Files */,
 			);
 			path = DemoApp;
@@ -251,6 +256,7 @@
 				13B8D8EF167188C200FA0480 /* main.m in Sources */,
 				13B8D8F3167188C200FA0480 /* AppDelegate.m in Sources */,
 				13B8D8FC167188C200FA0480 /* ViewController.m in Sources */,
+				134B64D61689B3E7003C82C0 /* FooViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
