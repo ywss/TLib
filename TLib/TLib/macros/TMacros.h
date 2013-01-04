@@ -75,6 +75,8 @@
 
 #define ShowRect(_rect) {NSLog(@"%@", NSStringFromCGRect(_rect));}
 
+#define ShowPoint(_point) {NSLog(@"%@", NSStringFromCGPoint(_point));}
+
 #define ShowSelector {NSLog(@"%@", NSStringFromSelector(_cmd));}
 
 ///////////////////////////////////////////////////////////////////////////////
